@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 
 // Component style overrides
 import Button from "theme/components/button"
@@ -21,6 +21,9 @@ const customTheme = extendTheme(
       Button,
     },
   },
+  withDefaultColorScheme({
+    colorScheme: "blue",
+  }),
 )
 
 export default customTheme
