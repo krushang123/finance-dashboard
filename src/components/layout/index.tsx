@@ -40,6 +40,7 @@ const Layout = (props: LayoutProps) => {
             px={{ base: 6, lg: 10 }}
             py={8}
             minH={`cal(100vh - ${headerHeight})`}
+            bgColor='#F2F6FA'
           >
             <SkipNavContent id='skip-nav' />
 
