@@ -21,7 +21,9 @@
       "components/*": ["components/*"],
       "pages/*": ["pages/*"],
       "theme/*": ["theme/*"],
-      "constants/*": ["constants/*"]
+      "constants/*": ["constants/*"],
+      "app/*": ["app/*"],
+      "store/*": ["store/*"]
     }
   },
   "include": ["src", "jest.config.js"],
