@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "rowid": "CMP",
+      "columnid": "WI",
+      "displayValue": "60.10",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "CMP",
+      "columnid": "SP",
+      "displayValue": "64.5",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "CMP",
+      "columnid": "SU",
+      "displayValue": "68.2",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "CMP",
+      "columnid": "AU",
+      "displayValue": "65.7",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "PL",
+      "columnid": "WI",
+      "displayValue": "33.7",
+      "colorRangeLabel": "Freezing"
+    },
+    {
+      "rowid": "PL",
+      "columnid": "SP",
+      "displayValue": "57.8",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "PL",
+      "columnid": "SU",
+      "displayValue": "74.49",
+      "colorRangeLabel": "Hot"
+    },
+    {
+      "rowid": "PL",
+      "columnid": "AU",
+      "displayValue": "57.6",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "EXP",
+      "columnid": "WI",
+      "displayValue": "22.89",
+      "colorRangeLabel": "Freezing"
+    },
+    {
+      "rowid": "EXP",
+      "columnid": "SP",
+      "displayValue": "55.7",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "EXP",
+      "columnid": "SU",
+      "displayValue": "72.2",
+      "colorRangeLabel": "Hot"
+    },
+    {
+      "rowid": "EXP",
+      "columnid": "AU",
+      "displayValue": "51.6",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "HO",
+      "columnid": "WI",
+      "displayValue": "53.0",
+      "colorRangeLabel": "Warm"
+    },
+    {
+      "rowid": "HO",
+      "columnid": "SP",
+      "displayValue": "72.7",
+      "colorRangeLabel": "Hot"
+    },
+    {
+      "rowid": "HO",
+      "columnid": "SU",
+      "displayValue": "83.3",
+      "colorRangeLabel": "Hot"
+    },
+    {
+      "rowid": "HO",
+      "columnid": "AU",
+      "displayValue": "53.0",
+      "colorRangeLabel": "Warm"
+    }
+  ]
+}
