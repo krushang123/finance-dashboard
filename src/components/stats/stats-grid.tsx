@@ -6,7 +6,7 @@ import ActivityStat from "components/stats/activity-stat"
 import TaskStat from "components/stats/task-stat"
 
 const StatsGrid = () => (
-  <SimpleGrid spacing={10} columns={4} w='full'>
+  <SimpleGrid spacing={10} columns={{ xl: 3, "2xl": 4 }} w='full'>
     <TeamStat />
     <StageStat />
     <ActivityStat />
