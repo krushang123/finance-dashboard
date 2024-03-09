@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "seriesname": "Done",
+      "color": "#02BD8B",
+      "data": [
+        { "value": 120 },
+        { "value": 80 },
+        { "value": 150 },
+        { "value": 40 },
+        { "value": 90 },
+        { "value": 60 },
+        { "value": 110 },
+        { "value": 30 },
+        { "value": 180 },
+        { "value": 70 }
+      ]
+    },
+    {
+      "seriesname": "Not Started",
+      "color": "#F72141",
+      "data": [
+        { "value": 50 },
+        { "value": 100 },
+        { "value": 70 },
+        { "value": 110 },
+        { "value": 60 },
+        { "value": 120 },
+        { "value": 80 },
+        { "value": 130 },
+        { "value": 40 },
+        { "value": 90 }
+      ]
+    },
+    {
+      "seriesname": "In Progress",
+      "color": "#FFC809",
+      "data": [
+        { "value": 30 },
+        { "value": 70 },
+        { "value": 40 },
+        { "value": 90 },
+        { "value": 20 },
+        { "value": 60 },
+        { "value": 110 },
+        { "value": 50 },
+        { "value": 180 },
+        { "value": 120 }
+      ]
+    }
+  ]
+}
