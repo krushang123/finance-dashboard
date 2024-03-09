@@ -1,4 +1,5 @@
 import { Box, List, Stack } from "@chakra-ui/layout"
+import { Avatar } from "@chakra-ui/avatar"
 
 import { sidebarIcons } from "constants/sidebar-icons"
 import SidebarItem from "./sidebar-item"
@@ -22,10 +23,12 @@ const Sidebar = (props: SidebarProps) => {
       left={0}
       zIndex='banner'
       w={sidebarWidth}
-      minH='100vh'
-      py={2}
+      h='100vh'
+      py={8}
       boxShadow='2xl'
       bgColor='#002874'
+      align='center'
+      justify='space-between'
     >
       <Box as='nav' aria-label='Dashboard Navigation'>
         <List>
@@ -34,6 +37,8 @@ const Sidebar = (props: SidebarProps) => {
           ))}
         </List>
       </Box>
+
+      <Avatar name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
     </Stack>
   )
 }

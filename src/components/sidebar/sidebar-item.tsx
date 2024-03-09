@@ -22,13 +22,14 @@ const SidebarItem = (props: SidebarItemProps) => {
       _after={{
         content: "''",
         position: "absolute",
-        w: isActive ? "12px" : "0px",
+        w: isActive ? "8px" : "0px",
         h: "auto",
         left: "-2.5",
         top: 0,
         bottom: 0,
         bg: "#2194FF",
       }}
+      opacity={isActive ? 0.8 : 1}
     >
       <Tooltip label={item.label} placement='right' hasArrow>
         <Flex display='block' w='full' alignItems='center' direction='column'>
