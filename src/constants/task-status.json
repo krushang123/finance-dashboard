@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "label": "Planned",
+      "value": "200",
+      "color": "#99A3AC"
+    },
+    {
+      "label": "Completed",
+      "value": "500",
+      "color": "#02BD8B"
+    },
+    {
+      "label": "Expired",
+      "value": "200",
+      "color": "#F72141"
+    }
+  ]
+}
