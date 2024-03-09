@@ -12,9 +12,9 @@ const StatContainer = (props: StatContainerProps) => {
 
   return (
     <Flex
-      gap={4}
+      gap={2}
       bgColor='white'
-      p={6}
+      p={4}
       rounded='lg'
       justify='space-between'
       align='center'
