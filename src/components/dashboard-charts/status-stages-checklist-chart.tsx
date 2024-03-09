@@ -1,9 +1,9 @@
-import taskStatusData from "constants/status-tasks-checklist.json"
-import StackedColumn2DChart from "./charts/stacked-column-2d-chart"
+import taskStatusData from "constants/status-stages-checklist.json"
+import StackedColumn2DChart from "../charts/stacked-column-2d-chart"
 
 const dataSource = {
   chart: {
-    caption: "Status of Tasks in Checklist",
+    caption: "Status of Stages in Checklist",
     subCaption: "",
     theme: "fusion",
     captionFont: "Montserrat, sans-serif",
@@ -41,14 +41,26 @@ const dataSource = {
         {
           label: "Checklist Number 6",
         },
+        {
+          label: "Checklist Number 7",
+        },
+        {
+          label: "Checklist Number 8",
+        },
+        {
+          label: "Checklist Number 9",
+        },
+        {
+          label: "Checklist Number 10",
+        },
       ],
     },
   ],
   dataset: taskStatusData.data,
 }
 
-const StatusTasksChecklistChart = () => (
+const StatusStagesChecklistChart = () => (
   <StackedColumn2DChart dataSource={dataSource} />
 )
 
-export default StatusTasksChecklistChart
+export default StatusStagesChecklistChart

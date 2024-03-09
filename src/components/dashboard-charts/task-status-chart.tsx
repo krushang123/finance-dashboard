@@ -1,5 +1,5 @@
 import taskStatusData from "constants/task-status.json"
-import Doughnut2DChart from "./charts/doughnut-2d-chart"
+import Doughnut2DChart from "../charts/doughnut-2d-chart"
 
 const dataSource = {
   chart: {

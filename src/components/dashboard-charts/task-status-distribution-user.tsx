@@ -1,9 +1,9 @@
-import taskStatusData from "constants/task-status-distribution-team.json"
-import HeatMapChart from "./charts/heat-map-chart"
+import taskStatusData from "constants/task-status-distribution-user.json"
+import HeatMapChart from "../charts/heat-map-chart"
 
 const dataSource = {
   chart: {
-    caption: "Task Status Distribution to Team",
+    caption: "Task Status Distribution to User",
     subCaption: "Lorem ipsum dolor sit, amet",
     theme: "fusion",
     captionFont: "Montserrat, sans-serif",
@@ -89,8 +89,8 @@ const dataSource = {
   },
 }
 
-const TaskStatusDistributionTeam = () => (
+const TaskStatusDistributionUser = () => (
   <HeatMapChart dataSource={dataSource} />
 )
 
-export default TaskStatusDistributionTeam
+export default TaskStatusDistributionUser
