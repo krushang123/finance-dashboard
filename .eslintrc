@@ -15,6 +15,7 @@
     "plugin:import/recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react-redux/recommended",
     "standard-with-typescript",
     "airbnb",
     "airbnb-typescript",
@@ -49,5 +50,7 @@
     "import/prefer-default-export": "off",
     "react/function-component-definition": "off",
     "@typescript-eslint/promise-function-async": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-props-no-spreading": "off",
   },
 }
