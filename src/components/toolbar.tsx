@@ -1,9 +1,5 @@
 import { Flex, HStack } from "@chakra-ui/layout"
 import { Button } from "@chakra-ui/button"
-import { RiSettings3Line } from "react-icons/ri"
-import { BiDotsHorizontalRounded } from "react-icons/bi"
-import { FiFilter } from "react-icons/fi"
-import { MdDashboardCustomize } from "react-icons/md"
 
 import IconButtonWithTooltip from "./icon-button-with-tooltip"
 
@@ -16,15 +12,23 @@ const Toolbar = () => (
     bgColor='white'
     p={8}
   >
-    <Button leftIcon={<RiSettings3Line />}>Operational (9)</Button>
+    <Button leftIcon={<i className='icon-gears-arrows-rotate' />}>
+      Operational (9)
+    </Button>
 
     <HStack justify={{ base: "space-between" }}>
       <IconButtonWithTooltip
-        icon={<BiDotsHorizontalRounded />}
+        icon={<i className='icon-ellipsis' />}
         label='More Options'
       />
-      <IconButtonWithTooltip icon={<FiFilter />} label='Filters' />
-      <IconButtonWithTooltip icon={<MdDashboardCustomize />} label='Widgets' />
+      <IconButtonWithTooltip
+        icon={<i className='icon-filter' />}
+        label='Filters'
+      />
+      <IconButtonWithTooltip
+        icon={<i className='icon-grid-plus-2' />}
+        label='Widgets'
+      />
     </HStack>
   </Flex>
 )

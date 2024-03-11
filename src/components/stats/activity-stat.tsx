@@ -1,5 +1,4 @@
 import { VStack, Text } from "@chakra-ui/layout"
-import { HiOutlinePresentationChartLine } from "react-icons/hi"
 
 import IconSquare from "components/icon-square"
 import StatContainer from "./stat-container"
@@ -17,7 +16,7 @@ const ActivityStat = () => (
         </Text>
       </VStack>
     }
-    rightChildren={<IconSquare icon={HiOutlinePresentationChartLine} />}
+    rightChildren={<IconSquare icon='icon-activity' />}
   />
 )
 

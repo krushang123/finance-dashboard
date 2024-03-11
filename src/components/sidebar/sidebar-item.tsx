@@ -1,4 +1,3 @@
-import { Icon } from "@chakra-ui/icon"
 import { ListItem, Text, HStack, useBreakpointValue } from "@chakra-ui/react"
 import { Tooltip } from "@chakra-ui/tooltip"
 
@@ -38,11 +37,13 @@ const SidebarItem = (props: SidebarItemProps) => {
     >
       <Tooltip label={item.label} placement='right' hasArrow>
         <HStack spacing={4}>
-          <Icon
+          {/* <Icon
             as={item.icon}
             fontSize={{ base: "2xl", lg: "xl", "2xl": "2xl" }}
             aria-label={item.label}
-          />
+          /> */}
+
+          <i className={item.icon} style={{ fontSize: "20px" }} />
 
           <Text
             w='full'

@@ -1,50 +1,39 @@
-import { type IconProps } from "@chakra-ui/icons"
-import { type ComponentWithAs } from "@chakra-ui/system"
-import { type IconType } from "react-icons"
-import { MdDashboard } from "react-icons/md"
-import { BsBuildingsFill } from "react-icons/bs"
-import { RiMenu3Fill, RiSettings3Line } from "react-icons/ri"
-import { HiOutlinePresentationChartLine } from "react-icons/hi2"
-import { FiUsers } from "react-icons/fi"
-import { IoCalendarOutline } from "react-icons/io5"
-import { LuFileSpreadsheet } from "react-icons/lu"
-
 export interface SidebarIcon {
-  icon: IconType | ComponentWithAs<"svg", IconProps>
+  icon: string
   label: string
 }
 
 export const sidebarIcons: SidebarIcon[] = [
   {
-    icon: MdDashboard,
+    icon: "icon-objects-column-2",
     label: "General Bank",
   },
   {
-    icon: BsBuildingsFill,
+    icon: "icon-buildings-2",
     label: "Client Based",
   },
   {
-    icon: RiMenu3Fill,
+    icon: "icon-align-right",
     label: "Stage/Folder",
   },
   {
-    icon: HiOutlinePresentationChartLine,
+    icon: "icon-activity",
     label: "Activities",
   },
   {
-    icon: RiSettings3Line,
+    icon: "icon-gears-arrows-rotate",
     label: "Operational",
   },
   {
-    icon: FiUsers,
+    icon: "icon-users-solid",
     label: "Teams",
   },
   {
-    icon: IoCalendarOutline,
+    icon: "icon-calender-days-2",
     label: "Calendar",
   },
   {
-    icon: LuFileSpreadsheet,
+    icon: "icon-file-chart-column",
     label: "Reporting",
   },
 ]

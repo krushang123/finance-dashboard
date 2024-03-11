@@ -1,10 +1,7 @@
 import { Square, type SquareProps } from "@chakra-ui/layout"
-import { Icon, type IconProps } from "@chakra-ui/icons"
-import { type IconType } from "react-icons"
-import { type ComponentWithAs } from "@chakra-ui/system"
 
 interface IconSquareProps extends SquareProps {
-  icon: IconType | ComponentWithAs<"svg", IconProps>
+  icon: string
 }
 
 const IconSquare = (props: IconSquareProps) => {
@@ -12,7 +9,7 @@ const IconSquare = (props: IconSquareProps) => {
 
   return (
     <Square size='64px' bgColor='#EEF2F5' rounded='lg'>
-      <Icon boxSize='26.3px' color='#007EF3' as={icon} />
+      <i className={icon} style={{ fontSize: "30px", color: "#007EF3" }} />
     </Square>
   )
 }
