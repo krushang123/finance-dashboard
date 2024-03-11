@@ -1,5 +1,4 @@
 import { VStack, Text, HStack, StackDivider } from "@chakra-ui/layout"
-import { SlClock } from "react-icons/sl"
 
 import IconSquare from "components/icon-square"
 import StatContainer from "./stat-container"
@@ -49,7 +48,7 @@ const TaskStat = () => (
         </HStack>
       </VStack>
     }
-    rightChildren={<IconSquare icon={SlClock} />}
+    rightChildren={<IconSquare icon='icon-clock-circle' />}
   />
 )
 

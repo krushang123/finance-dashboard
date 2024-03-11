@@ -1,5 +1,4 @@
 import { VStack, Text, HStack, StackDivider } from "@chakra-ui/layout"
-import { RiMenu3Fill } from "react-icons/ri"
 
 import IconSquare from "components/icon-square"
 import StatContainer from "./stat-container"
@@ -39,7 +38,7 @@ const StageStat = () => (
         </HStack>
       </VStack>
     }
-    rightChildren={<IconSquare icon={RiMenu3Fill} />}
+    rightChildren={<IconSquare icon='icon-align-right' />}
   />
 )
 
