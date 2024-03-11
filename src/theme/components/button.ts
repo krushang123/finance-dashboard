@@ -4,7 +4,7 @@ const Button: ComponentStyleConfig = {
   // The styles all button have in common
   baseStyle: {
     color: "#FFFFFF",
-    fontWeight: 500,
+    fontWeight: "semibold",
   },
 
   // styles for different sizes ("sm", "md", "lg")
@@ -15,7 +15,7 @@ const Button: ComponentStyleConfig = {
 
   // default values for `size` and `variant`
   defaultProps: {
-    size: "lg",
+    size: "md",
     variant: "solid",
   },
 }

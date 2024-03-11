@@ -1,10 +1,11 @@
 import { type ReactNode } from "react"
 
 import { Container, Box } from "@chakra-ui/layout"
-import { useBreakpointValue } from "@chakra-ui/react"
+import { useBreakpointValue, useDisclosure } from "@chakra-ui/react"
 import { SkipNavContent, SkipNavLink } from "@chakra-ui/skip-nav"
 
-import Sidebar from "../sidebar"
+import Sidebar from "../sidebar/sidebar"
+import Header from "./header"
 
 interface LayoutProps {
   children: ReactNode
@@ -12,6 +13,12 @@ interface LayoutProps {
 
 const Layout = (props: LayoutProps) => {
   const { children } = props
+
+  const {
+    isOpen: isSidebarDrawerOpen,
+    onOpen: openSidebarDrawer,
+    onClose: closeSidebarDrawer,
+  } = useDisclosure()
 
   const sidebarWidth = String(
     useBreakpointValue({ base: "full", lg: "74px" }, { ssr: false }),
@@ -21,6 +28,10 @@ const Layout = (props: LayoutProps) => {
     useBreakpointValue({ base: "75px", lg: "85px" }, { ssr: false }),
   )
 
+  const isDesktop = Boolean(
+    useBreakpointValue({ base: false, lg: true }, { ssr: false }),
+  )
+
   return (
     <Container maxW='100vw' p={0}>
       <SkipNavLink id='skip-nav' zIndex='skipLink'>
@@ -28,15 +39,24 @@ const Layout = (props: LayoutProps) => {
       </SkipNavLink>
 
       <Box display='flex'>
-        <Sidebar sidebarWidth={sidebarWidth} />
+        {isDesktop && <Sidebar sidebarWidth={sidebarWidth} />}
 
         <Box w='full'>
-          {/* <Header sidebarWidth={sidebarWidth} headerHeight={headerHeight} /> */}
+          {!isDesktop && (
+            <Header
+              sidebarWidth={sidebarWidth}
+              headerHeight={headerHeight}
+              openSidebarDrawer={openSidebarDrawer}
+              isSidebarDrawerOpen={isSidebarDrawerOpen}
+              closeSidebarDrawer={closeSidebarDrawer}
+            />
+          )}
 
           <Container
             as='main'
             centerContent
-            maxW={`calc(100vw - ${sidebarWidth})`}
+            m={0}
+            maxW='100%'
             px={{ base: 6, lg: 10 }}
             py={8}
             minH={`cal(100vh - ${headerHeight})`}

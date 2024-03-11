@@ -8,7 +8,7 @@ const StageStat = () => (
   <StatContainer
     leftChildren={
       <VStack align='flex-start'>
-        <Text fontWeight='semibold' color='#7E8B9F'>
+        <Text fontSize='13px' fontWeight='semibold' color='#7E8B9F'>
           Stages
         </Text>
 
@@ -18,21 +18,21 @@ const StageStat = () => (
           divider={<StackDivider borderColor='gray.200' />}
         >
           <VStack spacing={0} align='flex-start'>
-            <Text fontSize='2xl' fontWeight='bold'>
+            <Text fontSize='20px' fontWeight='bold'>
               12
             </Text>
 
-            <Text fontWeight='semibold' color='#7E8B9F'>
+            <Text fontSize='11px' fontWeight='semibold' color='#7E8B9F'>
               Main S.
             </Text>
           </VStack>
 
           <VStack spacing={0} align='flex-start'>
-            <Text fontSize='2xl' fontWeight='bold'>
+            <Text fontSize='20px' fontWeight='bold'>
               54
             </Text>
 
-            <Text fontWeight='semibold' color='#7E8B9F'>
+            <Text fontSize='11px' fontWeight='semibold' color='#7E8B9F'>
               Sub S.
             </Text>
           </VStack>

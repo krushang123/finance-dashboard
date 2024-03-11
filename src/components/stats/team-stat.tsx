@@ -4,16 +4,31 @@ import AvatarList, { type User } from "components/avatar/user-avatar-list"
 import StatContainer from "./stat-container"
 
 const users: User[] = [
-  { id: 1, name: "Dan Abrahmov", badgeContent: 12 },
-  { id: 2, name: "Kola Tioluwani", badgeContent: 8 },
-  { id: 3, name: "Kent Dodds", badgeContent: 2 },
+  {
+    id: 1,
+    name: "Dan Abrahmov",
+    badgeContent: 12,
+    src: "https://bit.ly/dan-abramov",
+  },
+  {
+    id: 2,
+    name: "Kola Tioluwani",
+    badgeContent: 8,
+    src: "https://bit.ly/tioluwani-kolawole",
+  },
+  {
+    id: 3,
+    name: "Kent Dodds",
+    badgeContent: 2,
+    src: "https://bit.ly/kent-c-dodds",
+  },
 ]
 
 const TeamStat = () => (
   <StatContainer
     leftChildren={
       <VStack align='flex-start'>
-        <Text fontWeight='semibold' color='#7E8B9F'>
+        <Text fontSize='14px' fontWeight='semibold' color='#7E8B9F'>
           Teams
         </Text>
 
@@ -22,16 +37,16 @@ const TeamStat = () => (
           align='center'
           divider={<StackDivider borderColor='gray.200' />}
         >
-          <Text fontSize='4xl' fontWeight='bold'>
+          <Text fontSize='26px' fontWeight='bold'>
             22
           </Text>
 
           <VStack spacing={0} align='flex-start'>
-            <Text fontSize='2xl' fontWeight='bold'>
+            <Text fontSize='20px' fontWeight='bold'>
               65
             </Text>
 
-            <Text fontWeight='semibold' color='#7E8B9F'>
+            <Text fontSize='11px' fontWeight='semibold' color='#7E8B9F'>
               Members
             </Text>
           </VStack>

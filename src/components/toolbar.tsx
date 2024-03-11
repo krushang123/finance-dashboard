@@ -8,10 +8,17 @@ import { MdDashboardCustomize } from "react-icons/md"
 import IconButtonWithTooltip from "./icon-button-with-tooltip"
 
 const Toolbar = () => (
-  <Flex w='full' justify='space-between' bgColor='white' p={8}>
+  <Flex
+    direction={{ base: "column-reverse", sm: "row" }}
+    gap={4}
+    w='full'
+    justify='space-between'
+    bgColor='white'
+    p={8}
+  >
     <Button leftIcon={<RiSettings3Line />}>Operational (9)</Button>
 
-    <HStack>
+    <HStack justify={{ base: "space-between" }}>
       <IconButtonWithTooltip
         icon={<BiDotsHorizontalRounded />}
         label='More Options'

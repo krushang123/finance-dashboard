@@ -11,8 +11,8 @@ const IconSquare = (props: IconSquareProps) => {
   const { icon } = props
 
   return (
-    <Square size='60px' bgColor='#EEF2F5' rounded='lg'>
-      <Icon boxSize={6} color='#007EF3' as={icon} />
+    <Square size='64px' bgColor='#EEF2F5' rounded='lg'>
+      <Icon boxSize='26.3px' color='#007EF3' as={icon} />
     </Square>
   )
 }

@@ -1,5 +1,5 @@
 import { Icon } from "@chakra-ui/icon"
-import { ListItem, Flex, Text } from "@chakra-ui/react"
+import { ListItem, Text, HStack, useBreakpointValue } from "@chakra-ui/react"
 import { Tooltip } from "@chakra-ui/tooltip"
 
 import { type SidebarIcon } from "../../constants/sidebar-icons"
@@ -10,6 +10,10 @@ interface SidebarItemProps {
 
 const SidebarItem = (props: SidebarItemProps) => {
   const { item } = props
+
+  const isDesktop = Boolean(
+    useBreakpointValue({ base: false, lg: true }, { ssr: false }),
+  )
 
   const isActive = item.label === "Operational"
 
@@ -24,33 +28,33 @@ const SidebarItem = (props: SidebarItemProps) => {
         position: "absolute",
         w: isActive ? "8px" : "0px",
         h: "auto",
-        left: "-2.5",
+        left: { base: "-8", lg: "-2.5" },
         top: 0,
         bottom: 0,
         bg: "#2194FF",
       }}
       opacity={isActive ? 0.8 : 1}
+      bgColor={isActive ? "blue.700" : "transparent"}
     >
       <Tooltip label={item.label} placement='right' hasArrow>
-        <Flex display='block' w='full' alignItems='center' direction='column'>
+        <HStack spacing={4}>
           <Icon
-            w='full'
             as={item.icon}
-            fontSize='2xl'
+            fontSize={{ base: "2xl", lg: "xl", "2xl": "2xl" }}
             aria-label={item.label}
           />
 
           <Text
             w='full'
-            fontSize='xs'
+            fontSize={{ base: "md", lg: "xs" }}
             fontWeight='bold'
-            textAlign='center'
+            textAlign={{ base: "left", lg: "center" }}
             textTransform='capitalize'
-            hidden
+            hidden={isDesktop}
           >
             {item.label}
           </Text>
-        </Flex>
+        </HStack>
       </Tooltip>
     </ListItem>
   )

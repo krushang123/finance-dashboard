@@ -8,11 +8,11 @@ const ActivityStat = () => (
   <StatContainer
     leftChildren={
       <VStack align='flex-start'>
-        <Text fontWeight='semibold' color='#7E8B9F'>
+        <Text fontSize='14px' fontWeight='semibold' color='#7E8B9F'>
           Total Activity
         </Text>
 
-        <Text fontSize='4xl' fontWeight='bold'>
+        <Text fontSize='26px' fontWeight='bold'>
           123.321
         </Text>
       </VStack>
