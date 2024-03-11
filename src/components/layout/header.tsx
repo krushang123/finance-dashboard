@@ -1,12 +1,22 @@
 import { Flex } from "@chakra-ui/layout"
+import SidebarDrawer from "components/sidebar/sidebar-drawer"
 
 interface HeaderProps {
+  openSidebarDrawer: () => void
+  closeSidebarDrawer: () => void
+  isSidebarDrawerOpen: boolean
   sidebarWidth: string
   headerHeight: string
 }
 
 const Header = (props: HeaderProps) => {
-  const { sidebarWidth, headerHeight } = props
+  const {
+    sidebarWidth,
+    headerHeight,
+    openSidebarDrawer,
+    isSidebarDrawerOpen,
+    closeSidebarDrawer,
+  } = props
 
   return (
     <Flex
@@ -26,6 +36,12 @@ const Header = (props: HeaderProps) => {
       bgColor='white'
     >
       <p>logo</p>
+
+      <SidebarDrawer
+        openSidebarDrawer={openSidebarDrawer}
+        isSidebarDrawerOpen={isSidebarDrawerOpen}
+        closeSidebarDrawer={closeSidebarDrawer}
+      />
     </Flex>
   )
 }

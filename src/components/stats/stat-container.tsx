@@ -1,6 +1,6 @@
 import { type ReactNode } from "react"
 
-import { Flex } from "@chakra-ui/layout"
+import { Wrap } from "@chakra-ui/layout"
 
 interface StatContainerProps {
   leftChildren: ReactNode
@@ -11,17 +11,18 @@ const StatContainer = (props: StatContainerProps) => {
   const { leftChildren, rightChildren } = props
 
   return (
-    <Flex
-      gap={2}
+    <Wrap
+      gap={0}
       bgColor='white'
-      p={4}
-      rounded='lg'
+      px={5}
+      py={6}
+      rounded='md'
       justify='space-between'
       align='center'
     >
       {leftChildren}
       {rightChildren}
-    </Flex>
+    </Wrap>
   )
 }
 

@@ -8,7 +8,7 @@ const TaskStat = () => (
   <StatContainer
     leftChildren={
       <VStack align='flex-start'>
-        <Text fontWeight='semibold' color='#7E8B9F'>
+        <Text fontSize='14px' fontWeight='semibold' color='#7E8B9F'>
           Tasks Status
         </Text>
 
@@ -18,32 +18,32 @@ const TaskStat = () => (
           divider={<StackDivider borderColor='gray.200' />}
         >
           <VStack spacing={0} align='flex-start'>
-            <Text fontSize='2xl' fontWeight='bold'>
+            <Text fontSize='20px' fontWeight='bold'>
               12
             </Text>
 
-            <Text fontWeight='semibold' color='#7E8B9F'>
-              Planned
+            <Text fontSize='11px' fontWeight='semibold' color='#7E8B9F'>
+              Plan
             </Text>
           </VStack>
 
           <VStack spacing={0} align='flex-start'>
-            <Text fontSize='2xl' fontWeight='bold'>
+            <Text fontSize='20px' fontWeight='bold'>
               32
             </Text>
 
-            <Text fontWeight='semibold' color='#7E8B9F'>
-              Completed
+            <Text fontSize='11px' fontWeight='semibold' color='#7E8B9F'>
+              Complete
             </Text>
           </VStack>
 
           <VStack spacing={0} align='flex-start'>
-            <Text fontSize='2xl' fontWeight='bold'>
+            <Text fontSize='20px' fontWeight='bold'>
               21
             </Text>
 
-            <Text fontWeight='semibold' color='#7E8B9F'>
-              Expired
+            <Text fontSize='11px' fontWeight='semibold' color='#7E8B9F'>
+              Expire
             </Text>
           </VStack>
         </HStack>

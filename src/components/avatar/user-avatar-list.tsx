@@ -6,6 +6,7 @@ export interface User {
   id: number
   name: string
   badgeContent: number
+  src: string
 }
 
 interface AvatarListProps {
@@ -16,12 +17,13 @@ const AvatarList = (props: AvatarListProps) => {
   const { users } = props
 
   return (
-    <HStack spacing={4}>
+    <HStack spacing={1}>
       {users.map((user) => (
         <UserAvatar
           key={user.id}
           name={user.name}
           badgeContent={user.badgeContent}
+          src={user.src}
         />
       ))}
     </HStack>
