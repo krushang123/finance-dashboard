@@ -29,7 +29,7 @@ const SidebarDrawer = (props: SidebarDrawerProps) => {
       <IconButton
         ref={btnRef}
         variant='ghost'
-        color='black'
+        color='white'
         icon={<FiMenu fontSize='2xl' />}
         aria-label='Open Menu'
         onClick={openSidebarDrawer}

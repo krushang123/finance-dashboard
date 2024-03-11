@@ -1,4 +1,6 @@
 import { Flex } from "@chakra-ui/layout"
+
+import Logo from "components/logo"
 import SidebarDrawer from "components/sidebar/sidebar-drawer"
 
 interface HeaderProps {
@@ -33,9 +35,9 @@ const Header = (props: HeaderProps) => {
       px={{ base: 6, lg: 10 }}
       py={{ base: 2, lg: 6 }}
       boxShadow={{ base: "lg", lg: "none" }}
-      bgColor='white'
+      bgColor='#002874'
     >
-      <p>logo</p>
+      <Logo />
 
       <SidebarDrawer
         openSidebarDrawer={openSidebarDrawer}

@@ -2,6 +2,7 @@ import { Box, List, Stack } from "@chakra-ui/layout"
 import { Avatar } from "@chakra-ui/avatar"
 
 import { sidebarIcons } from "constants/sidebar-icons"
+import Logo from "components/logo"
 import SidebarItem from "./sidebar-item"
 
 interface SidebarProps {
@@ -32,13 +33,17 @@ const Sidebar = (props: SidebarProps) => {
       align='center'
       justify='space-between'
     >
-      <Box w='full' as='nav' aria-label='Dashboard Navigation'>
-        <List>
-          {sidebarIcons.map((item) => (
-            <SidebarItem key={item.label} item={item} />
-          ))}
-        </List>
-      </Box>
+      <Stack w='full' align='center' spacing={14}>
+        <Logo />
+
+        <Box w='full' as='nav' aria-label='Dashboard Navigation'>
+          <List>
+            {sidebarIcons.map((item) => (
+              <SidebarItem key={item.label} item={item} />
+            ))}
+          </List>
+        </Box>
+      </Stack>
 
       <Avatar name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
     </Stack>

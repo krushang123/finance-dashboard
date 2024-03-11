@@ -46,8 +46,7 @@ const SidebarItem = (props: SidebarItemProps) => {
 
           <Text
             w='full'
-            fontSize={{ base: "md", lg: "xs" }}
-            fontWeight='bold'
+            fontSize='13px'
             textAlign={{ base: "left", lg: "center" }}
             textTransform='capitalize'
             hidden={isDesktop}
