@@ -57,8 +57,7 @@ const Layout = (props: LayoutProps) => {
             centerContent
             m={0}
             maxW='100%'
-            px={{ base: 6, lg: 10 }}
-            py={8}
+            p={0}
             minH={`cal(100vh - ${headerHeight})`}
             bgColor='#F2F6FA'
           >

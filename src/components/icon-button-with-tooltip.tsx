@@ -18,6 +18,7 @@ const IconButtonWithTooltip = (props: IconButtonWithTooltipProps) => {
         fontSize='22px'
         aria-label={label}
         icon={icon}
+        boxShadow='lg'
       />
     </Tooltip>
   )

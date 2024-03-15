@@ -5,7 +5,7 @@ import Toolbar from "components/toolbar"
 import DashboardChartsGrid from "components/dashboard-charts/dashboard-charts-grid"
 
 const Home = () => (
-  <VStack spacing={8} w='full'>
+  <VStack spacing={5} w='full'>
     <StatsGrid />
     <Toolbar />
     <DashboardChartsGrid />
