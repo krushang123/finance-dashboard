@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/layout"
 import FusionCharts, { type ChartObject } from "fusioncharts"
 import PowerCharts from "fusioncharts/fusioncharts.powercharts"
 import TreeMap from "fusioncharts/fusioncharts.treemap"
@@ -21,9 +22,13 @@ const HeatMapChart = (props: HeatMapChartProps) => {
     dataSource,
   }
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
-  return <ReactFC {...chartConfigs} />
+  return (
+    <Box rounded='md' overflow='hidden'>
+      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+      {/* @ts-expect-error */}
+      <ReactFC {...chartConfigs} />
+    </Box>
+  )
 }
 
 export default HeatMapChart

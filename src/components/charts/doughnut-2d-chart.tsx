@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/layout"
 import FusionCharts, { type ChartObject } from "fusioncharts"
 import Charts from "fusioncharts/fusioncharts.charts"
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion"
@@ -20,9 +21,13 @@ const Doughnut2DChart = (props: Doughnut2DChartProps) => {
     dataSource,
   }
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
-  return <ReactFC {...chartConfigs} />
+  return (
+    <Box rounded='md' overflow='hidden'>
+      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+      {/* @ts-expect-error */}
+      <ReactFC {...chartConfigs} />
+    </Box>
+  )
 }
 
 export default Doughnut2DChart
