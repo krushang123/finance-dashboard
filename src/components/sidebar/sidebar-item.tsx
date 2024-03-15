@@ -5,10 +5,11 @@ import { type SidebarIcon } from "../../constants/sidebar-icons"
 
 interface SidebarItemProps {
   item: SidebarIcon
+  expanded: boolean
 }
 
 const SidebarItem = (props: SidebarItemProps) => {
-  const { item } = props
+  const { item, expanded } = props
 
   const isDesktop = Boolean(
     useBreakpointValue({ base: false, lg: true }, { ssr: false }),
@@ -25,7 +26,7 @@ const SidebarItem = (props: SidebarItemProps) => {
       _after={{
         content: "''",
         position: "absolute",
-        w: isActive ? "8px" : "0px",
+        w: isActive ? "1rem" : "0px",
         h: "auto",
         left: { base: "-8", lg: "-2.5" },
         top: 0,
@@ -37,20 +38,15 @@ const SidebarItem = (props: SidebarItemProps) => {
     >
       <Tooltip label={item.label} placement='right' hasArrow>
         <HStack spacing={4}>
-          {/* <Icon
-            as={item.icon}
-            fontSize={{ base: "2xl", lg: "xl", "2xl": "2xl" }}
-            aria-label={item.label}
-          /> */}
-
           <i className={item.icon} style={{ fontSize: "20px" }} />
 
           <Text
             w='full'
             fontSize='13px'
-            textAlign={{ base: "left", lg: "center" }}
+            textAlign='left'
+            fontWeight='semibold'
             textTransform='capitalize'
-            hidden={isDesktop}
+            hidden={isDesktop && !expanded}
           >
             {item.label}
           </Text>

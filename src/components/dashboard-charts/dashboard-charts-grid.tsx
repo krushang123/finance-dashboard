@@ -7,7 +7,7 @@ import StatusTasksChecklistChart from "./status-tasks-checklist-chart"
 import StatusStagesChecklistChart from "./status-stages-checklist-chart"
 
 const DashboardChartsGrid = () => (
-  <SimpleGrid spacing={10} columns={{ base: 1, lg: 2 }} w='full'>
+  <SimpleGrid p={5} spacing={5} columns={{ base: 1, lg: 2 }} w='full'>
     <TaskStatusChart />
     <TaskStatusDistributionTeam />
     <TaskStatusDistributionUser />

@@ -10,7 +10,9 @@ const Toolbar = () => (
     w='full'
     justify='space-between'
     bgColor='white'
-    p={8}
+    px={5}
+    py={6}
+    boxShadow='xs'
   >
     <Button leftIcon={<i className='icon-gears-arrows-rotate' />}>
       Operational (9)
